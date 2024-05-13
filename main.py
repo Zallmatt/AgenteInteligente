@@ -149,14 +149,23 @@ class __main__:
             print(obtener_respuesta(pregunta_usuario))
             print("-------------------------------------------------")
             pregunta_usuario = input("Te puedo ayudar en algo mas? (si - no): ")
+            if pregunta_usuario == "No" or pregunta_usuario == "no":
+                print("Nos vemos pronto, que tengas buen dia C:")
+                exit()
         elif seleccion.isdigit():
             seleccion = int(seleccion)
             if 1 <= seleccion <= len(preguntas):
                 print(respuestas[seleccion - 1])
                 pregunta_usuario = input("Te puedo ayudar en algo mas? (si - no): ")
+                if pregunta_usuario == "No" or pregunta_usuario == "no":
+                    print("Nos vemos pronto")
+                    exit()
             else:
                 print("Selección inválida. Por favor, ingrese un número válido.")
                 pregunta_usuario = input("Te puedo ayudar en algo mas? (si - no): ")
+                if pregunta_usuario == "No" or pregunta_usuario == "no":
+                    print("Nos vemos pronto")
+                    exit()
 
 
 """ 
