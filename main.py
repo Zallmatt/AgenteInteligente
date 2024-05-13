@@ -132,7 +132,7 @@ class __main__:
         if mejor_pregunta is not None:
             return preguntas_y_respuestas[mejor_pregunta]
         else:
-            return "Lo siento, no tengo información sobre esa pregunta."
+            return "Lo siento, aún no tengo información sobre eso."
 
     nombre = input("Hola soy un bot de consultas, como te llamas: ")
     print(f"Hola {nombre}, mucho gusto")
