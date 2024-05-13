@@ -115,14 +115,16 @@ respuestas = [
 
 class __main__:
     def obtener_respuesta(pregunta_usuario):
-        pregunta_usuario_tokenizada = word_tokenize(pregunta_usuario.lower())
+        pregunta_usuario = pregunta_usuario.lower()
         max_coincidencias = 0
         mejor_pregunta = None
 
-        for pregunta, tokens in preguntas_tokenizadas.items():
-            coincidencias = sum(
-                1 for token in pregunta_usuario_tokenizada if token in tokens
-            )
+        def contar_coincidencias(pregunta_usuario, pregunta):
+            coincidencias = sum(1 for i in range(len(pregunta_usuario) - 2) if pregunta_usuario[i:i+3] in pregunta)
+            return coincidencias
+
+        for pregunta in preguntas_y_respuestas.keys():
+            coincidencias = contar_coincidencias(pregunta_usuario, pregunta.lower())
             if coincidencias > max_coincidencias:
                 max_coincidencias = coincidencias
                 mejor_pregunta = pregunta
