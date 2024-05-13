@@ -120,7 +120,7 @@ class __main__:
         mejor_pregunta = None
 
         def contar_coincidencias(pregunta_usuario, pregunta):
-            coincidencias = sum(1 for i in range(len(pregunta_usuario) - 2) if pregunta_usuario[i:i+3] in pregunta)
+            coincidencias = sum(1 for i in range(len(pregunta_usuario) - 3) if pregunta_usuario[i:i+4] in pregunta)
             return coincidencias
 
         for pregunta in preguntas_y_respuestas.keys():
