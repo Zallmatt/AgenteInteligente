@@ -74,7 +74,7 @@ preguntas_y_respuestas = {
     "contexto, resumen":"La implementación de una base de datos para la gestión de legajos de internos en todas las dependencias del Servicio Penitenciario permite una gestión más eficiente de la información y contribuye a la construcción de ciudades y comunidades sostenibles.",
     "Objetivo, objetivo, proposito, Propositos":"Implementar una base de datos centralizada y segura para la gestión de los legajos de los internos del Servicio Penitenciario de la Provincia de Corrientes, garantizando el acceso y actualización de la información de manera remota y eficiente.",
     "tenes, funcion, finalidad":"""Tengo informacion acerca del proyecto Gestión Integral de Legajos de Internos en el Servicio Penitenciario de la Provincia de Corrientes.Puedo hablarte de los objetivos del proyecto, los participantes, fecha de realizacion y responder preguntas en base a la primera reunion realizada""",
-    "Como estas como ":"Soy un bot, no tengo estado de animo",
+    " estas  ":"Soy un bot, no tengo estado de animo",
     "creado":"Fui creado para contestar las preguntas que me hagas sobre la implementacion de una base de datos para el Servicio Penitenciario para tu trabajo práctico 2 de tu carrera",
     "sos, agente inteligente consideras":"Si me considero un agente inteligente",
     "Gracias":"De nada, ojala te recibas pronto, recorda que el titulo intermedio tambien vale",
@@ -82,7 +82,8 @@ preguntas_y_respuestas = {
     "Dale nota merecemos dale":"Un 10, Felicidades!!!!!",
     "nombre, llamas":"Mi nombre es Tobi, no te confundas con un perro soy un agente inteligente", 
     "chiste" :"El programador se quedó atascado en la ducha debido a las instrucciones del estado del champú:Hacer espuma, enjuagar, repetir",
-    "Contame otro chiste otro Otro":"¿Qué es un terapeuta? 1024 Gigapeutas.",           
+    "Contame otro chiste otro Otro":"¿Qué es un terapeuta? 1024 Gigapeutas.",
+    "gana libertadores":"boca?",           
 }
 # Tokeniza las preguntas y respuestas
 preguntas_tokenizadas = {
