@@ -7,11 +7,11 @@ from nltk.tokenize import word_tokenize
 # nltk.download('punkt')
 
 preguntas_y_respuestas = {
-    "¿principales dificultades que enfrenta actualmente el personal penitenciario en la gestión de los legajos de internos?dificultades dificultad  gestion limitaciones  Desafíos principales, obstáculos principales, problemas principales  Encara actualmente, afronta en la actualidad, lidia actualmente Empleados carcelarios, funcionarios de prisiones, agentes penitenciarios Administración de expedientes de reclusos, manejo de archivos de presos, control de registros de internos ": "Las dificultades en la gestión de los legajos internos incluyen limitaciones de escalabilidad, problemas de seguridad y rendimiento en la base de datos. Además, parte de la gestión se realiza a través de Onedrive, donde se almacenan imágenes de algunas características de los presos.",
+    "difultades Dificultades difucltades Difucltades": "Las dificultades en la gestión de los legajos internos incluyen limitaciones de escalabilidad, problemas de seguridad y rendimiento en la base de datos. Además, parte de la gestión se realiza a través de Onedrive, donde se almacenan imágenes de algunas características de los presos.",
     
-    "¿ actualidad  donde  guarda  informacion?  tipo base datos caracteristica imagenes guarda En qué lugar se guarda actualmente la informacion y qué tipo de base de datos se utiliza? Y qué características tienen las imágenes almacenadas? Cuál es la ubicación actual de la información y cuál es el formato de base de datos que se emplea? Podrías describir las características de las imágenes almacenadas? En qué ubicación se almacena actualmente la información y cuál es el tipo de base de datos utilizado? ¿Y podrías detallar las características de las imágenes que se guardan? Donde estan los datos de los presos? " : "Es un Access y hay un OneDrive que es donde se almacenan las imagenes",
+    "base de datos, Base de Datos, actualmente" : "Actualmente, la base de datos es un Access y un OneDrive en donde se almacenan las imagenes de los presos",
     
-    "¿Qué tipo  tipos  de informacion gestionan actualmente  legajos  internos?   informacion maneja  penitenciaria Informacion sobre Penitenciaria Informacion  Servicio Penitenciario  informacion gestiona actualmente tipo informacion gestiona actualmente ¿Qué tipo de tipos de información gestionan actualmente los legajos internos? ¿Qué información maneja la penitenciaría? Qué información sobre la Penitenciaria gestiona el Servicio Penitenciario? Qué información gestiona actualmente? Qué tipo de información gestiona actualmente la penitenciaría? Qué información de los presos internos hay existen?": """La información que se gestiona actualmente es:
+    "informacion gestion gestiona actualmente": """La información que se gestiona actualmente es:
                                                     *Carpeta médica
                                                     *Educación
                                                     *Carta de situación: Nombre, DNI, Numero de Loft o Lift y Juzgado al que pertenece
@@ -21,11 +21,11 @@ preguntas_y_respuestas = {
                                                     *Senias particulares
                                                     """,
     
-    "¿Con qué frecuencia se actualizan los datos de los legajos internos?, Cuál es la frecuencia de actualización de los datos en los legajos de internos, Con qué regularidad se actualizan los datos de los registros de los internos, Cuántas veces se actualizan diariamente los datos de los legajos de internos, Cada cuánto se renuevan los registros de los presos en la base de datos frecuencia, Se actualiza la base de datos, actualizacion, datos, legajos internos": "Todos los días se realizan actualizaciones de datos por la contínua entrada y salida de condenados y procesados.",
+    "actualizaciones cada cuanto": "Todos los días se realizan actualizaciones de datos por la contínua entrada y salida de condenados y procesados.",
     
-    "¿Cuáles son los requisitos de seguridad y confidencialidad que deben cumplirse para los datos de los legajos internos?, Qué medidas de seguridad y confidencialidad deben seguirse para los datos de los legajos internos, Cómo se implementa la seguridad y confidencialidad en la base de datos de los legajos internos, Cuál es el tipo de seguridad en la base de datos de los legajos internos, Qué medidas se toman para garantizar la seguridad de los datos en los legajos internos, seguridad, confidencialidad, seguiridad": "Actualmente unicamente pueden tener acceso los empleados que cumplan con los roles requeridos.",
+    "Seguridad seguridad confidencialidad medidas": "Actualmente unicamente pueden tener acceso los empleados que cumplan con los roles requeridos.",
     
-    "¿Que areas o dependencias componentes el servicio penitenciario?, areas, dependencias, servicio penitenciario, componen": """Las areas/dependecias del Servicio Penitenciario son:
+    "areas dependencias": """Las areas/dependecias del Servicio Penitenciario son:
     *Oficinas de seguridad interna
     *Tratamiento
     *Judiciales
@@ -35,8 +35,8 @@ preguntas_y_respuestas = {
     Cada área cuenta con disponibilidad de computadoras y cada uno se encarga de cargar los datos pertinentes a cada area
     Los datos obligatorios van a depender de cada área.
     """,
-    "¿Con que tecnologia cuenta cada area del servicio penitenciario?, Que tecnologia tiene cada area, Con que tecnologia cuenta cada area, de que se encarga cada area":"Cada área cuenta con disponibilidad de computadoras y cada uno se encarga de cargar los datos pertinentes a su area",
-    "¿ funcionalidades específicas esperan obtener  sistema de gestión  legajos  internos? Qué funcionalidades específicas esperan obtener del sistema de gestión de legajos internos? Cuáles son los requisitos que deben cumplir las funcionalidades de una base de datos específica para los usuarios funcionalidades requerimientos cumplir base de datos especificas usuario usuarios": 
+    "tecnologia tiene cada area, Con que tecnologia cuenta cada area, de que se encarga cada area":"Cada área cuenta con disponibilidad de computadoras y cada uno se encarga de cargar los datos pertinentes a su area",
+    "funcionalidades específicas esperan obtener  sistema de gestión  legajos  internos? requisitos cumplir las funcionalidades de una base de datos ": 
     """Los mismos con lo que ya cuentan actualmente, que son: Visualización, Consulta.
     Se requiere que se agreguen alertas en casos específicos.
     También la base debe tener una actualización diaria, en lo posible, debido a que tienen muchos ingresos y egresos diarios.
@@ -48,11 +48,11 @@ preguntas_y_respuestas = {
     *Tiempo de beneficio
     *Fase de liberación""",
     
-    "¿Cada sector tiene un codigo de acceso? codigo de acceso para agregar descripciones? Sectores con codigos Códigos de acceso código de acceso descripciones":"Cada sector tiene un codigo de acceso y debe estar habilitado para agregar descripciones""",
+    "codigo/codigo de acceso para agregar descripciones?":"Cada sector tiene un codigo de acceso y debe estar habilitado para agregar descripciones""",
     
-    "¿Cuantos niveles conforman la penitenciaria?, Cuantos niveles tiene, cuales eran los niveles, que niveles conforman, que niveles tiene": "Se tienen 4 niveles: Judiciales, Educación, Sanidad, Trabajo",
+    "niveles ": "Se tienen 4 niveles: Judiciales, Educación, Sanidad, Trabajo",
     
-    "¿ Que sectores tiene la penitenciaria carcel?, Cuantos sectores tiene la penitenciaria?, sectores sector de accesibilidad  control  requiere sobre  información   legajos   internos? Existe existe cada sector sectores tiene algo especial codigo acceso nivel control seguridad accesibilidad controles cuales penitenciaria": """La idea es que cada nivel tenga su formulario
+    "sectores sector ": """La idea es que cada nivel tenga su formulario
                 La cárcel consta de varios sectores/niveles como: 
                 *Judiciales
                 *Educación
@@ -60,14 +60,14 @@ preguntas_y_respuestas = {
                 *Trabajo
                 Cada sector tiene un codigo de acceso y debe estar habilitado para agregar descripciones
                 """,
-    "¿Que procesos impactarian de manera eficiente en la gestion? Que vinculos se tendrian que tener en cuenta? esperan implementación  impacto impactos base de datos impacte eficiencia procesos gestión penitenciaria carcel servicio penitenciario? espera luego base datos implementación impacte eficiencia procesos cree o proceso carga lectura datos Como sería el proceso de carga y lectura de datos?": """Se espera obtener la Carta de situación
+    " implementación  impacto impactos base de datos impacte eficiencia procesos gestión penitenciaria carcel servicio penitenciario? espera luego base datos implementación impacte eficiencia procesos cree o proceso carga lectura datos Como sería el proceso de carga y lectura de datos?": """Se espera obtener la Carta de situación
     La idea es que se vinculen datos o crucen entre internos. Los vinculos a tener en cuenta son: 
     * Relaciones entre internos.
     * Organigrama de visitas.
     * Alerta de persona ya registrada en visitas.
     * Cruzaba información entre internos. Esta utlima ya esta creada pero es obsoleta.
     """,
-    "¿Quien coordina el proyecto, supervisa el progreso del proyecto y asegura que los entregables se completen a tiempo y dentro del presupuesto?":" El  Gestor de Proyecto es Luis Gonzalez",
+    "¿supervisa el progreso del proyecto y asegura que los entregables se completen a tiempo y dentro del presupuesto?":" El  Gestor de Proyecto es Luis Gonzalez",
     "¿Quienes participan   proyecto? Cuales son los participantes del trabajo? cuales son los participantes del proyecto? Quienes quienes participan proyecto":"Los alumnos de 4to y 5to año de la carrera de Ingenieria en Sistemas de la Informacion de la Universidad de la Cuenca del Plata",
     "¿Cual duracion  proyecto? Duracion duracion proyecto": "El planeamiento se llevara a cabo durante el primer cuatrimestre a cargo de los alumnos de 5to año y el desarrollo de la base de datos se llevara a cabo en el segundo cuatrimestre a cargo de los alumnos de 4to año",
     " podes dar  resumen  contexto del proyecto?Contexto Resumen resumen proyecto":"La implementación de una base de datos para la gestión de legajos de internos en todas las dependencias del Servicio Penitenciario permite una gestión más eficiente de la información y contribuye a la construcción de ciudades y comunidades sostenibles.",
@@ -89,9 +89,30 @@ preguntas_tokenizadas = {
 }
 pregunta_usuario = "hola"
 
+preguntas = [
+    "¿Cuáles son las principales dificultades que enfrenta actualmente el personal penitenciario en la gestión de los legajos de internos?",
+    "¿Cuál es la frecuencia de actualización de los datos en los legajos de los internos?",
+    "¿Qué requisitos de seguridad y confidencialidad deben cumplir los datos de los legajos de los internos?",
+    "¿Qué dependencias del Servicio Penitenciario se encuentran activas y qué dispositivos tecnológicos poseen?",
+    "¿Qué funcionalidades específicas esperan obtener del sistema de gestión de legajos de internos?",
+    "¿Qué nivel de accesibilidad y control se requiere sobre la información de los legajos de los internos?",
+    "¿Cómo esperan que la implementación de esta base de datos impacte en la eficiencia y en los procesos de la gestión penitenciaria?"
+]
+
+respuestas = [
+    "Las dificultades en la gestión de los legajos internos incluyen limitaciones de escalabilidad, problemas de seguridad y rendimiento en la base de datos. Además, parte de la gestión se realiza a través de Onedrive, donde se almacenan imágenes de algunas características de los presos.",
+    "Todos los días se realizan actualizaciones de datos por la contínua entrada y salida de condenados y procesados.",
+    "Actualmente unicamente pueden tener acceso los empleados que cumplan con los roles requeridos.",
+    "Oficinas de seguridad interna, Tratamiento, Judiciales, Sanidad, Social, Trabajo. Cada área cuenta con disponibilidad de computadoras y cada uno carga datos pertinentes a sus áreas.",
+    "Los mismos que ya cuentan actualmente, que son: Visualización, Consulta. Y se requiere que se agreguen alertas en casos específicos que quedamos en definir. También la base de tener una actualización diaria, en lo posible, debido a que tienen muchos ingresos y egresos diarios.",
+    "SI, la idea es que cada nivel tenga su formulario. La cárcel consta de varios sectores/niveles como: Judiciales, Educación, Sanidad, Trabajo. Cada sector debe estar habilitado para agregar descripciones. Código de acceso a cada sector.",
+    "Se espera obtener la Carta de situación. La idea es que se vinculen datos o crucen entre internos. Vínculos a tener en cuenta: Vincular vínculos entre internos. Organigrama de visitas. Alerta de persona ya registrada en visitas. Cruzaba información entre internos(YA CREADA) OBSOLETA."
+]
+
+
+
 
 class __main__:
-
     def obtener_respuesta(pregunta_usuario):
         pregunta_usuario_tokenizada = word_tokenize(pregunta_usuario.lower())
         max_coincidencias = 0
@@ -110,11 +131,60 @@ class __main__:
         else:
             return "Lo siento, no tengo información sobre esa pregunta."
 
-    # Ejemplo de uso
+    nombre = input("Hola soy un bot de consultas, como te llamas: ")
+    print(f"Hola {nombre}, mucho gusto")
+    print("Soy un bot de consultas y tengo integradas las respuestas a estas preguntas ")
+    while pregunta_usuario != "No" or pregunta_usuario != "no":
+        print("---------------------------------------------------------------")
+        for i, pregunta in enumerate(preguntas, 1):
+            print(f"{i}. {pregunta}")
+        print("---------------------------------------------------------------")
+        print("Si la pregunta no esta en la lista, seleccione 12")
+        seleccion = input("Ingrese el número de la pregunta: ")
+        if seleccion == '12':
+            pregunta_usuario = input("Hazme una pregunta: ")
+            print(obtener_respuesta(pregunta_usuario))
+            print("-------------------------------------------------")
+            pregunta_usuario = input("Te puedo ayudar en algo mas? (si - no): ")
+        elif seleccion.isdigit():
+            seleccion = int(seleccion)
+            if 1 <= seleccion <= len(preguntas):
+                print(respuestas[seleccion - 1])
+                pregunta_usuario = input("Te puedo ayudar en algo mas? (si - no): ")
+            else:
+                print("Selección inválida. Por favor, ingrese un número válido.")
+                pregunta_usuario = input("Te puedo ayudar en algo mas? (si - no): ")
+
+
+""" 
+        for i, pregunta in enumerate(preguntas, 1):
+            print(f"{i}. {pregunta}")
+        seleccion = input("Ingrese el número de la pregunta (o ingrese '10' para salir): ")
+        if seleccion == '10':
+            print("Saliendo del programa...")
+            exit()  # Sale del programa si se ingresa '10'
+        elif seleccion.isdigit():
+            seleccion = int(seleccion)
+            if 1 <= seleccion <= len(preguntas):
+                print(respuestas[seleccion - 1])
+            else:
+                print("Selección inválida. Por favor, ingrese un número válido.")
+ """
+
+"""     # Ejemplo de uso
     nombre = input("Hola soy un bot de consultas, como te llamas: ")
     print(f"Hola {nombre}, mucho gusto")
     while pregunta_usuario != "No" or pregunta_usuario != "no":
-        pregunta_usuario = input("Hazme una pregunta: ")
-        print(obtener_respuesta(pregunta_usuario))
-        print("-------------------------------------------------")
-        print("Te puedo ayudar en algo mas?")
+        print("Soy un bot de consultar y tengo integradas las respuestas a estas preguntas ")
+        print("---------------------------------------------------------------")
+        for i, pregunta in enumerate(preguntas, 1):
+            print(f"{i}. {pregunta}")
+        print("---------------------------------------------------------------")
+        print("Si la pregunta no esta en la lista, seleccione 12")
+        seleccion = input("Ingrese el número de la pregunta: ")
+        if seleccion == '12':
+            pregunta_usuario = input("Hazme una pregunta: ")
+            print(obtener_respuesta(pregunta_usuario))
+            print("-------------------------------------------------")
+            print("Te puedo ayudar en algo mas?")
+ """
